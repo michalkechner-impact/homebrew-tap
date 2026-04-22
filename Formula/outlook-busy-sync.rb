@@ -11,7 +11,7 @@ class OutlookBusySync < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.1.0/outlook-busy-sync_0.1.0_darwin_amd64.tar.gz"
-      sha256 "2cbbda5593a9fc61f0163e314922e1969bcd7fe6399ec86d90665f69935717c0"
+      sha256 "695311ae75444d59ac66727ad694b1a23517431766c449a5d51a8b20202c9da0"
 
       define_method(:install) do
         bin.install "outlook-busy-sync"
@@ -19,7 +19,7 @@ class OutlookBusySync < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.1.0/outlook-busy-sync_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d5ff814ccd13cddc25eb7e41aa8d3c4affa04d901c75c3f89dea9d34feea02b5"
+      sha256 "196ebd649c6959fc63f875e5323836e61f6df4b1ef383dd0e1bfbe77c835eb9f"
 
       define_method(:install) do
         bin.install "outlook-busy-sync"
@@ -30,14 +30,14 @@ class OutlookBusySync < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.1.0/outlook-busy-sync_0.1.0_linux_amd64.tar.gz"
-      sha256 "aeeaeeddd1660c9fc9a0572f8663745875b9d2a1a752ec68cb9a9256d53a655e"
+      sha256 "8f4c0b2055aca307fceae6a1e38fd7c3a738e4d223cb1be995304b220fffe204"
       define_method(:install) do
         bin.install "outlook-busy-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.1.0/outlook-busy-sync_0.1.0_linux_arm64.tar.gz"
-      sha256 "c5c64a9d654141a523388eaca8ac95daac4e7c6d98be930358e57a8967103bbe"
+      sha256 "474bb57e6af6d5493e65daed093f92ed36c4d0d75346fb42d4b6ff419590759d"
       define_method(:install) do
         bin.install "outlook-busy-sync"
       end
