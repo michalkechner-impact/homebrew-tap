@@ -5,21 +5,21 @@
 class OutlookBusySync < Formula
   desc "Mirror busy blocks between two Microsoft 365 calendars"
   homepage "https://github.com/michalkechner-impact/outlook-busy-sync"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.0/outlook-busy-sync_0.2.0_darwin_amd64.tar.gz"
-      sha256 "cd3d7e72379fceb87440904423a511585b5ebe0065b5d1d70148eff37e3440c8"
+      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.1/outlook-busy-sync_0.2.1_darwin_amd64.tar.gz"
+      sha256 "1bf168469074286c78e469b71559d0a79374e0684ff1f615336bdbff765b49a7"
 
       define_method(:install) do
         bin.install "outlook-busy-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.0/outlook-busy-sync_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c5658b0b5136bbc87ef9b9f5cd6c7c48a157de86c950a113acd6e44be35b1afb"
+      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.1/outlook-busy-sync_0.2.1_darwin_arm64.tar.gz"
+      sha256 "d3010b50597bc86f226ceb2372ec1668408f84247a3efc21db69452e72f888f2"
 
       define_method(:install) do
         bin.install "outlook-busy-sync"
@@ -29,15 +29,15 @@ class OutlookBusySync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.0/outlook-busy-sync_0.2.0_linux_amd64.tar.gz"
-      sha256 "dbaf3de66b59db470ca8e0c35400ea1144f1dd549f884bd5ec0b364857bfa850"
+      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.1/outlook-busy-sync_0.2.1_linux_amd64.tar.gz"
+      sha256 "33d4bc95b2948af6237519e4838035260a96605768e7c0599e49cee071c9a488"
       define_method(:install) do
         bin.install "outlook-busy-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.0/outlook-busy-sync_0.2.0_linux_arm64.tar.gz"
-      sha256 "5ef47daf8900a9d35dbff4a5aac886d760e7baca140a2551a8e622e09c6b3079"
+      url "https://github.com/michalkechner-impact/outlook-busy-sync/releases/download/v0.2.1/outlook-busy-sync_0.2.1_linux_arm64.tar.gz"
+      sha256 "639917089a078bee07e54deb7bc3a727bc8fa18bd0e9febba6e40b7367ed1743"
       define_method(:install) do
         bin.install "outlook-busy-sync"
       end
